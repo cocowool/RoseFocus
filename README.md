@@ -1,0 +1,1 @@
+Rose Focus Slide Effect
