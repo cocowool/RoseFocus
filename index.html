@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
+		<meta charset="utf-8">
 		<title>Rose Focus Example</title>
 	</head>
 	<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+	<link rel="stylesheet" href="./css/rosefocus.css">
 <body>
 	
-
+	<div class="rf-container">
+		<div class="rf-container-body">
+			<a href="#" class="rf-slide-prev"></a>
+			<div class="rf-slide-pane">
+				<div class="rf-slide-section">
+					<div class="rf-section-item" id="rf-section-1">
+						<div class="rf-section-item-inner">
+							<h1>
+								<a href="#"><img src="./images/text1.png" alt=""></a>
+							</h1>							
+						</div>
+					</div>
+					<div class="rf-section-item" id="rf-section-2">
+						<div class="rf-section-item-inner">
+							<h1>
+								<a href="#"><img src="./images/text2.png" alt=""></a>
+							</h1>
+						</div>
+					</div>
+					<div class="rf-section-item" id="rf-section-3">
+						<div class="rf-section-item-inner">
+							<h1>
+								<a href="#"><img src="./images/text3.png" alt=""></a>
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="rf-slide-next"></a>
+		</div>
+	</div>
 
 	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.rf-slide-section').css('left');
+	});
 	</script>
 </body>
 </html>

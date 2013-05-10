@@ -1,4 +1,64 @@
 /*-- Rose Focus Effect --*/
 /*-- Author:Green Wang at 2013-05-10 --*/
 
+.rf-container { 
+	margin: 0; display: block; 
+}
+.rf-container-body { 
+	width: 100%;
+	min-height: 400px;
+	padding-bottom: 0;
 
+	clear: both;
+}
+
+.rf-slide-pane {
+	position: relative;
+	overflow: hidden;
+	height: 400px;
+	clear: both;
+	margin: 0 auto;
+}
+
+.rf-slide-section {
+	position: absolute;
+	margin:0 -10px;
+	width:20000em;
+}
+
+.rf-section-item {
+	float:left;
+	padding: 0;
+	height: 400px;
+	overflow: hidden;
+	clear: none;
+}
+
+#rf-section-1 {
+	background: url(../images/bg1.jpg) repeat-x 50% 0px;
+	height:400px;
+	width:1264px;
+}
+#rf-section-2 {
+	background: url(../images/bg2.jpg) repeat-x 50% 0px;
+	width:1264px;
+}
+#rf-section-3 {
+	background: url(../images/bg3.jpg) repeat-x 50% 0px;
+	width:1264px;
+}
+
+.rf-section-item-inner {
+	width: 998px;
+	margin: 0 auto;
+	float: none;
+}
+
+.rf-section-item-inner h1 {
+	position: relative;
+	height: auto;
+}
+
+.rf-section-item-inner img {
+	display: inline;
+}
