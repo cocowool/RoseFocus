@@ -5,6 +5,7 @@
 		<title>Rose Focus Example</title>
 	</head>
 	<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="./js/jquery-ui-1.10.3.custom.min.js"></script>
 	<link rel="stylesheet" href="./css/rosefocus.css">
 <body>
 	
@@ -51,20 +52,37 @@
 		$('.trigger').click(function(e){			
 			var i = $(e.target);
 			var w = 1264;
-			var c;
+			var c = i.index();
 			var left = -1 * 1264 *  ( i.index() );
 
+			//alert($('#rf-section-' + c + '>div>h1').html());
+			$('#rf-section-' + c + '>div>h1').animate(
+				{
+					left:left
+				},{
+					duration: 5000,
+					easing: 'easeOutElastic',
+					step : function(now, fx){
+						//alert( now + '/' + left + '=' + (now/left) );
+						if( ( now / left ) > 0.1 ){
+						}
+					},
+					complete: function(){
+					}
+				}
+			);
 			$('.rf-slide-section').animate(
 				{
 					left: left
 				}, {
-					duration: 700,
-					specialEasing: 'easeOutBounce',
+					duration: 2000,
+					easing: 'easeInOutExpo',
 					complete: function(){
 						//alert("Done");
 					}
 				}
 			);
+
 		});
 	});
 	</script>
