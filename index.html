@@ -40,9 +40,32 @@
 		</div>
 	</div>
 
+	<div>
+		<a href="#" id="s1" class="trigger">1</a>
+		<a href="#" id="s2" class="trigger">2</a>
+		<a href="#" id="s3" class="trigger">3</a>
+	</div>
+
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$('.rf-slide-section').css('left');
+		$('.trigger').click(function(e){			
+			var i = $(e.target);
+			var w = 1264;
+			var c;
+			var left = -1 * 1264 *  ( i.index() );
+
+			$('.rf-slide-section').animate(
+				{
+					left: left
+				}, {
+					duration: 700,
+					specialEasing: 'easeOutBounce',
+					complete: function(){
+						//alert("Done");
+					}
+				}
+			);
+		});
 	});
 	</script>
 </body>
