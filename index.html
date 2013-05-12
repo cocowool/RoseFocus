@@ -60,13 +60,20 @@
 
 	<script type="text/javascript">
 	$(document).ready(function(){
+		$('.rf-section-item').css('width', $(window).width() );
+		$(window).resize(function() {
+			//update stuff
+			//alert('test');
+			$('.rf-section-item').css('width', $(window).width() );
+		});
+
 		var current = 1;
 
 		$('.trigger').click(function(e){			
 			var i = $(this);
-			var w = 1264;
+			var w = $(window).width();
 			var c = i.index();
-			var left = -1 * 1264 *  ( i.index() );
+			var left = -1 * w *  ( i.index() );
 
 			$('.trigger').removeClass('on');
 			$(this).addClass('on');
@@ -76,7 +83,7 @@
 			console.log( 'left:' + left );
 			$('#rf-section-' + current + '>div>h1').animate(
 				{
-					left:-1000
+					left:-1300
 				},{
 					duration: 3000,
 					easing: 'easeOutElastic',

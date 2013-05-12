@@ -32,20 +32,18 @@
 	height: 400px;
 	overflow: hidden;
 	clear: none;
+	width:1264px;
 }
 
 #rf-section-1 {
 	background: url(../images/bg1.jpg) repeat-x 50% 0px;
 	height:400px;
-	width:1264px;
 }
 #rf-section-2 {
 	background: url(../images/bg2.jpg) repeat-x 50% 0px;
-	width:1264px;
 }
 #rf-section-3 {
 	background: url(../images/bg3.jpg) repeat-x 50% 0px;
-	width:1264px;
 }
 
 .rf-section-item-inner {
