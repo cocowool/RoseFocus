@@ -38,13 +38,24 @@
 				</div>
 			</div>
 			<a href="#" class="rf-slide-next"></a>
+			<div class="rf-slide-nav">
+				<a href="#" id="s1" class="on trigger">
+					<div class="rf-slide-nav-thumb thumb-1">
+						
+					</div>
+				</a>
+				<a href="#" id="s2" class="trigger">
+					<div class="rf-slide-nav-thumb thumb-2">
+						
+					</div>					
+				</a>
+				<a href="#" id="s3" class="trigger">
+					<div class="rf-slide-nav-thumb thumb-3">
+						
+					</div>					
+				</a>
+			</div>
 		</div>
-	</div>
-
-	<div>
-		<a href="#" id="s1" class="trigger">1</a>
-		<a href="#" id="s2" class="trigger">2</a>
-		<a href="#" id="s3" class="trigger">3</a>
 	</div>
 
 	<script type="text/javascript">
@@ -52,10 +63,13 @@
 		var current = 1;
 
 		$('.trigger').click(function(e){			
-			var i = $(e.target);
+			var i = $(this);
 			var w = 1264;
 			var c = i.index();
 			var left = -1 * 1264 *  ( i.index() );
+
+			$('.trigger').removeClass('on');
+			$(this).addClass('on');
 
 			console.log( '#rf-section-' + current + '>div>h1' );
 			console.log( $('#rf-section-' + current + '>div>h1') );
