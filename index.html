@@ -49,25 +49,28 @@
 
 	<script type="text/javascript">
 	$(document).ready(function(){
+		var current = 1;
+
 		$('.trigger').click(function(e){			
 			var i = $(e.target);
 			var w = 1264;
 			var c = i.index();
 			var left = -1 * 1264 *  ( i.index() );
 
-			//alert($('#rf-section-' + c + '>div>h1').html());
-			$('#rf-section-' + c + '>div>h1').animate(
+			console.log( '#rf-section-' + current + '>div>h1' );
+			console.log( $('#rf-section-' + current + '>div>h1') );
+			console.log( 'left:' + left );
+			$('#rf-section-' + current + '>div>h1').animate(
 				{
-					left:left
+					left:-1000
 				},{
-					duration: 5000,
+					duration: 3000,
 					easing: 'easeOutElastic',
 					step : function(now, fx){
-						//alert( now + '/' + left + '=' + (now/left) );
-						if( ( now / left ) > 0.1 ){
-						}
+
 					},
 					complete: function(){
+						$(this).css('left','0');
 					}
 				}
 			);
@@ -78,11 +81,13 @@
 					duration: 2000,
 					easing: 'easeInOutExpo',
 					complete: function(){
-						//alert("Done");
+						
 					}
 				}
 			);
-
+			console.log('Current:' + current);
+			current = c + 1;
+			console.log('Current Changed:' + current);
 		});
 	});
 	</script>
