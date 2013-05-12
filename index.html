@@ -81,17 +81,19 @@
 			//console.log( '#rf-section-' + current + '>div>h1' );
 			//console.log( $('#rf-section-' + current + '>div>h1') );
 			//console.log( 'left:' + left );
+			var that;
 			$('#rf-section-' + current + '>div>h1').animate(
 				{
-					left:-1300
+					left:-2500
 				},{
-					duration: 3000,
-					easing: 'easeOutElastic',
+					duration: 2000,
+					easing: 'easeOutQuint',
 					step : function(now, fx){
 
 					},
 					complete: function(){
-						$(this).css('left','0');
+						//$(this).css('left','0');
+						that = this;
 					}
 				}
 			);
@@ -102,7 +104,7 @@
 					duration: 2000,
 					easing: 'easeInOutExpo',
 					complete: function(){
-						
+						$(that).css('left','0');
 					}
 				}
 			);
