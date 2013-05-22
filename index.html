@@ -68,6 +68,28 @@
 		});
 
 		var current = 1;
+		var node = 1;
+
+		function autoplay(){
+			node = node + 1;
+			if( node > 3 ){
+				node = 1;
+			}
+			$('#s'+node).trigger('click');			
+		}
+
+		var play = setInterval(autoplay, 5000);
+
+
+		$('.rf-container').hover(function(){
+			return function(){
+				if(play){
+					clearInterval(play);
+				}
+			}();
+		}, function(){
+			play = setInterval(autoplay, 5000);
+		});
 
 		$('.trigger').click(function(e){			
 			var i = $(this);
@@ -110,6 +132,7 @@
 			);
 			//console.log('Current:' + current);
 			current = c + 1;
+			node = current + 1;
 			//console.log('Current Changed:' + current);
 		});
 	});
