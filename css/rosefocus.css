@@ -1,6 +1,14 @@
 /*-- Rose Focus Effect --*/
 /*-- Author:Green Wang at 2013-05-10 --*/
 
+body {
+	margin:0;
+}
+
+.hide {
+	display: hidden;
+}
+
 .rf-container { 
 	margin: 0; display: block; 
 }
@@ -114,4 +122,158 @@
 }
 .rf-slide-nav a .thumb-3 {
 	background: url(../images/thumb3.jpg) left top no-repeat;
+}
+
+/*-- News Feeds --*/
+.rf-content-body {
+	position: relative;
+}
+.rf-content-main {
+	position: relative;
+	margin-top: 0px;
+	width: 100%;
+	border-bottom: 1px solid #fff;
+}
+.rf-news-feed {
+	position: relative;
+	height: 29px;
+	border-top:1px solid rgba(0,0,0, .1);
+	margin-top: -30px;
+}
+.rf-content-main p {
+	position: relative;
+	font-size: 1em;
+	color: #333;
+	padding: 0;
+	margin: 0;
+}
+.rf-news-feed-inner, .rf-news-feed-inner a {
+	border-top:1px solid rgba(255,255,255,.3);	
+	color: #000;
+}
+.rf-news-feed-inner p {
+	display: block;
+	color: #000;
+	font-size: 13px;
+	/*text-shadow: 0px -1px 0 rgba(0,0,0,.5);*/
+	text-shadow: 0px 1px 0 rgba(255,255,255,.3);
+	margin: 0 auto;
+	width: 960px;
+	padding: 5px 10px;
+	vertical-align: baseline;
+	outline-color: rgb(255,255,255);
+	outline-width: 0;
+	outline-style: none;
+	-o-transition: all 2.1s;
+	-webkit-transition: all 2.1s;
+	-moz-transition: all 2.1s;
+}
+.rf-news-feed-inner a {
+	text-decoration: none;
+	border-top: 0;
+}
+.rf-news-feed-inner a:hover {
+	text-decoration: underline;
+}
+.rf-news-feed-data {
+	position: relative; 
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 4px;
+	padding: 0;
+}
+.rf-news-feed-data li {
+	margin: 0;
+	padding: 0;
+}
+.rf-news-feed a {
+	display: inline-block;
+	font-weight: normal;
+	margin-bottom: -3px;
+	text-decoration: none;
+}
+.rf-access {
+	position: absolute;
+	left: -3000px;
+}
+
+.rf-promotion-container {
+	position: relative;
+	height: 150px;
+	border-top: 1px solid #fff;
+	background: 
+		url(../images/box_gradient_lm.png) top left no-repeat, 
+		url(../images/box_gradient_rm.png) top right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+}
+.rf-container-body {
+	position: relative;
+	margin: 0 auto;
+}
+.rf-promotion-body {
+	width:990px;
+	margin: 0 auto;
+}
+.rf-ribbon-pane {
+	width: 990px;
+	margin:0 auto;
+	overflow: hidden;
+	height: 150px;
+	position: relative;
+	clear: both;
+	vertical-align: baseline;
+}
+.rf-ribbon-section {
+	position: absolute;
+	left: 0;
+	width: 20000em;
+	margin: 0;
+}
+.rf-ribbon-column {
+	width: 330px;
+	float: left;
+	margin: 0;
+	clear: none;padding-top: 20px;
+	overflow: visible;
+	padding-bottom: 10px;
+}
+.rf-column {
+	clear: none;
+	float: left;
+	padding: 0;
+	width: auto;
+}
+.rf-column a {
+	background-color: #fff;
+	width: 318px;
+	height: 98px;
+	display: block;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#666666, strength=3, direction=135);
+	box-shadow: 0px 1px 5px #999;
+	-moz-box-shadow: 0px 1px 5px #999;
+	-webkit-box-shadow: 0px 1px 5px #999;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 1px;
+	margin: 0px 5px;
+}
+.rf-promotion-container a.rf-ribbon-prev,
+.rf-promotion-container a.rf-ribbon-next {
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 70px;
+	background: url(../images/scroll_nav_sprite.gif) no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+	font-size: 0;
+}
+.rf-promotion-container a.rf-ribbon-prev {
+	top: 28px;
+	left:-15px;
+	background-position: 0 -75px;
+}
+.rf-promotion-container a.rf-ribbon-next {
+	top: 28px;
+	right:-15px;
+	background-position: 100% -25px;
 }
