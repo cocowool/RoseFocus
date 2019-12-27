@@ -1,0 +1,30 @@
+{
+  "name": "rosefocus",
+  "version": "0.0.1",
+  "description": "A new hexo theme, rosefocus.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cocowool/RoseFocus.git"
+  },
+  "keywords": [
+    "Hexo",
+    "RoseFocus"
+  ],
+  "author": "Wang Shiqiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cocowool/RoseFocus/issues"
+  },
+  "homepage": "https://github.com/cocowool/RoseFocus#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  }
+}
