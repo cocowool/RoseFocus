@@ -20,7 +20,7 @@ module.exports = {
         //     chunkFilename: '[id].css',
         //   }),
         new HtmlWebpackPlugin({
-            title: 'vMeeting Project'
+            title: 'RoseFocus Hexo Theme'
             // template: './src/index.html'
         })
     ]
