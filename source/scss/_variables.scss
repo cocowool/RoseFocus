@@ -1,10 +1,18 @@
 //CSS中所有使用到的参数
 
+//字体样式
+$font-family-monospace:     Monaco, Consolas, monospace !default;
+
 //字体尺寸
 $font-size-root:            20px;
 $font-size-base:            1rem !default;
 
 $h1-font-size:              $font-size-base * 2.5 !default;
+$h2-font-size:              $font-size-base * 2 !default;
+$h3-font-size:              $font-size-base * 1.75 !default;
+$h4-font-size:              $font-size-base * 1.5 !default;
+$h5-font-size:              $font-size-base * 1.25 !default;
+$h6-font-size:              $font-size-base !default;
 
 //Body 参数
 $body-color:              #000; 
@@ -12,8 +20,6 @@ $body-bg-color:           #fff;
 
 $black: #000;
 
-//字体尺寸
-$font-family-monospace:     sans-serif;
 
 //Link 参数
 $link-color:              #000;
@@ -29,3 +35,8 @@ $headings-color:          #000;
 //各元素的下边距
 $headings-margin-bottom:    0;
 $p-margin-bottom:           0;
+
+//临时区域，暂时定义一个mixin，后续研究twitter的rfs responsive font size
+@mixin font-size($property) {
+    font-size: $property;
+}
