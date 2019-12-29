@@ -1,15 +1,31 @@
+//CSS中所有使用到的参数
 
-//root尺寸
-$font-size-root: 20px;
+//字体尺寸
+$font-size-root:            20px;
+$font-size-base:            1rem !default;
+
+$h1-font-size:              $font-size-base * 2.5 !default;
 
 //Body 参数
-$body-color :#000; 
-$body-bg-color : #fff;
+$body-color:              #000; 
+$body-bg-color:           #fff;
 
 $black: #000;
 
+//字体尺寸
+$font-family-monospace:     sans-serif;
+
 //Link 参数
-$link-color: #000;
-$link-decoration: non;
-$link-hover-color: #0f0;
-$link-hover-decoration: none;
+$link-color:              #000;
+$link-decoration:           none;
+$link-hover-color:        #0f0;
+$link-hover-decoration:     none;
+
+//标题参数
+$headings-font-weight:      1;
+$headings-line-height:      1.5;
+$headings-color:          #000;
+
+//各元素的下边距
+$headings-margin-bottom:    0;
+$p-margin-bottom:           0;

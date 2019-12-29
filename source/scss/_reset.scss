@@ -25,9 +25,10 @@ body {
 
 %heading {
     margin-top:0;
-    margin-bottom:0;
-    line-height: 1.5;
-    color: #000;
+    margin-bottom: $headings-margin-bottom;
+    line-height: $headings-line-height;
+    font-weight: $headings-font-weight;
+    color: $headings-color;
 }
 
 h1 {
@@ -56,6 +57,7 @@ h6 {
 
 p {
     margin-top:0;
+    margin-bottom: $p-margin-bottom;
 }
 
 // 链接设置
@@ -87,4 +89,13 @@ ul ul,
 ol ul,
 ul ol {
     margin-bottom: 0;
+}
+
+//代码块样式设置
+pre,
+code,
+kbd,
+samp {
+    font-family: $font-family-monospace;
+    @include font-size(1em);
 }
