@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+// root大小影响rem的大小
+:root {
+    font-size: $font-size-root;
+}
+
 // Body 原素重新设置样式
 //
 // 1. 移除所有浏览器边距
@@ -62,4 +67,24 @@ a {
         color: $link-hover-color;
         text-decoration: $link-hover-decoration;
     }
+}
+
+// 列表设置
+ol, 
+ul {
+    padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+    margin-top:0;
+    margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
 }
