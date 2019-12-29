@@ -20,8 +20,8 @@ module.exports = {
         //     chunkFilename: '[id].css',
         //   }),
         new HtmlWebpackPlugin({
-            title: 'RoseFocus Hexo Theme'
-            // template: './src/index.html'
+            title: 'RoseFocus Hexo Theme',
+            template: './layout/layout.ejs'
         })
     ]
 }
