@@ -9,8 +9,57 @@
 // Body 原素重新设置样式
 //
 // 1. 移除所有浏览器边距
+// 2. 在移动设备上如手机和平板横屏会导致字体变大，-webkit-text-size-adjust: 100%可以禁止字体变化。https://www.jianshu.com/p/9fad261dd3e1
 body {
     margin:0;   //1
     color: $body-color;
     background-color: $body-bg-color;
+    -webkit-text-size-adjust: 100%; // 2
+    -webkit-tap-highlight-color: rgba($black, 0); // 4
+}
+
+%heading {
+    margin-top:0;
+    margin-bottom:0;
+    line-height: 1.5;
+    color: #000;
+}
+
+h1 {
+    @extend %heading;
+}
+
+h2 {
+    @extend %heading;
+}
+
+h3 {
+    @extend %heading;
+}
+
+h4 {
+    @extend %heading;
+}
+
+h5 {
+    @extend %heading;
+}
+
+h6 {
+    @extend %heading;
+}
+
+p {
+    margin-top:0;
+}
+
+// 链接设置
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
 }
