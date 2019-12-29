@@ -1,0 +1,16 @@
+//将CSS在浏览器间的差异消除
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Body 原素重新设置样式
+//
+// 1. 移除所有浏览器边距
+body {
+    margin:0;   //1
+    color: $body-color;
+    background-color: $body-bg-color;
+}
