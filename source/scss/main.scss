@@ -10,6 +10,16 @@ nav {
     background-color: $nav-color;
 }
 
+div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.fb-m {
+    border:1px solid #000;
+    margin: 1em;
+}
+
 #top-menu {
     background-color: $nav-color;
 }
