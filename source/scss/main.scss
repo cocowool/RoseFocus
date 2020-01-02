@@ -10,14 +10,16 @@ nav {
     background-color: $nav-color;
 }
 
-div {
+div.fl-container {
     display: flex;
     flex-wrap: nowrap;
 }
 
-.fb-m {
+div.fl-container .fl-m {
     border:1px solid #000;
     margin: 1em;
+    width: 100px;
+    height: 100px;
 }
 
 #top-menu {
