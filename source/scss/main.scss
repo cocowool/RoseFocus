@@ -26,6 +26,11 @@ div.fl-container .fl-m {
     margin: 1em;
     width: 100px;
     height: 100px;
+    // flex-grow: 1;
+}
+
+div.fl-container .fl-m2 {
+    flex-grow: -0.5;
 }
 
 #top-menu {
