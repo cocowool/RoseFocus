@@ -12,11 +12,17 @@ nav {
 
 div.fl-container {
     display: flex;
+    height: 300px;
     flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    background-color:#000;
 }
 
 div.fl-container .fl-m {
     border:1px solid #000;
+    background-color: #006633;
     margin: 1em;
     width: 100px;
     height: 100px;
