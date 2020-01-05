@@ -5,9 +5,25 @@
 $nav-color: green;
   
 nav {
-    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     height: 50px;
     background-color: $nav-color;
+}
+
+/*-- 中型的显示屏幕 --*/
+@media all and (max-width:800px) {
+    nav {
+        justify-content: space-around;
+    }
+}
+
+/*-- 小型屏幕 --*/
+@media all and (max-width: 500px){
+    nav {
+        flex-direction: column;
+    }
 }
 
 div.fl-container {
