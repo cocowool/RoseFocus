@@ -36,6 +36,19 @@ $headings-color:          #000;
 $headings-margin-bottom:    0;
 $p-margin-bottom:           0;
 
+//格栅系统参数
+$grid-columns:              12 !default;
+$grid-gutter-width:         30px !default;
+$grid-row-columns:          6 !default;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+ ) !default;
+
 //临时区域，暂时定义一个mixin，后续研究twitter的rfs responsive font size
 @mixin font-size($property) {
     font-size: $property;
