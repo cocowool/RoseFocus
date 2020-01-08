@@ -10,6 +10,12 @@ nav {
     background-color: $nav-color;
 }
 
+@each $color in red, green, yellow, blue {
+    .p_#{$color} {
+        background-color: #{$color};
+    }
+}
+
 /*-- 中型的显示屏幕 --*/
 @media all and (max-width:800px) {
     nav {
