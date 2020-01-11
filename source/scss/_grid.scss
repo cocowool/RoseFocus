@@ -1,6 +1,6 @@
 //格栅系统
 @mixin make-container($padding-x: $container-padding-x) {
-    width:100%;
+    width: 100%;
     padding-right:  $padding-x;
     padding-left:  $padding-x;
     margin-right: auto;
@@ -8,5 +8,12 @@
 }
 
 @mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breadpoints: $grid-breakpoints) {
+    %grid-column {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: ($gutter / 2);
+        padding-left: ($gutter / 2);
+    }
     
 }

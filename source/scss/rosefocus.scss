@@ -7,3 +7,11 @@
 @import "reset";
 @import "grid";
 @import "mixin";
+
+//创建容器
+.container {
+    @include make-container();
+}
+
+//创建栅格系统样式
+@include make-grid-columns();
