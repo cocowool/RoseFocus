@@ -1,4 +1,8 @@
 //格栅系统
+/**
+ * 创建container的mixin
+ *
+ */
 @mixin make-container($padding-x: $container-padding-x) {
     width: 100%;
     padding-right:  $padding-x;
