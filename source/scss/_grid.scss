@@ -11,7 +11,8 @@
     margin-left: auto;
 }
 
-@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breadpoints: $grid-breakpoints) {
+@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+    //%开头类似于mixin，但是不能带参数
     %grid-column {
         position: relative;
         width: 100%;
@@ -20,4 +21,12 @@
         padding-left: ($gutter / 2);
     }
     
+    @each $breakpoint in map-keys($breakpoints) {
+
+        @for $i from 1 through $columns {
+            .col-#{$i} {
+                @extend %grid-column;
+            }
+        }
+    }
 }
