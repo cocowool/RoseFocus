@@ -6,6 +6,8 @@
  */ 
 
 $blog-header-color : #000;
+$blog-footer-bg: #38383a;
+$blog-footer-color: #fff;
 
 .blog-header {
    border-bottom: 1px solid #000;
@@ -21,6 +23,20 @@ $blog-header-color : #000;
    }
 }
 
+.blog-post-lists {
+    display: flex;
+}
+
+.blog-sidebar {
+    display: flex;
+}
+
+.blog-footer {
+    display: flex;
+    padding: 1em;
+    background-color: $blog-footer-bg;
+    color: $blog-footer-color;
+}
 
 $nav-color: green;
   
