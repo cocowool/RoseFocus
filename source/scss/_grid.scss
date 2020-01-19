@@ -1,4 +1,14 @@
 //格栅系统
+
+/**
+ * 输出不同尺寸断点的前缀
+ *
+ */
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints){
+    @debug "test";
+    @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
 /**
  * 创建container的mixin
  *
@@ -22,9 +32,10 @@
     }
     
     @each $breakpoint in map-keys($breakpoints) {
+        $infix: breakpoint-infix($breakpoint, $breakpoints);
 
         @for $i from 1 through $columns {
-            .col-#{$i} {
+            .col#{$infix}-#{$i} {
                 @extend %grid-column;
             }
         }
