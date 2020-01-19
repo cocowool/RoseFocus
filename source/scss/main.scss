@@ -5,10 +5,22 @@
  * 
  */ 
 
+$blog-header-color : #000;
+
 .blog-header {
    border-bottom: 1px solid #000;
    height: auto; 
+
+   .blog-header-logo {
+       color: $blog-header-color;
+   }
+
+   ul.blog-header-menu {
+       list-style-type: none;
+       display: inline-flex;
+   }
 }
+
 
 $nav-color: green;
   
