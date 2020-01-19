@@ -5,15 +5,20 @@
  * 
  */ 
 
+.blog-header {
+   border-bottom: 1px solid #000;
+   height: auto; 
+}
+
 $nav-color: green;
   
-nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    height: 50px;
-    background-color: $nav-color;
-}
+// nav {
+//     display: flex;
+//     flex-flow: row wrap;
+//     justify-content: flex-end;
+//     height: 50px;
+//     background-color: $nav-color;
+// }
 
 @each $color in red, green, yellow, blue {
     .p_#{$color} {
@@ -23,13 +28,6 @@ nav {
 
 // 这以下都是测试代码 =====================
 
-.foo {
-    color: red;
-
-    .bar {
-        color: green;
-    }
-}
 
 // 这以上都是测试代码 =====================
 
@@ -88,4 +86,3 @@ foot {
     }
 }
 
-@include make-grid-columns();
