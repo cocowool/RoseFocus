@@ -21,6 +21,22 @@
     margin-left: auto;
 }
 
+/**
+ * 针对每个尺寸设置最大宽度
+ *
+ **/
+@mixin make-container-max-widths ( $max-widths: $container-max-widths, $breakpoints: $grid-breakpoints ) {
+    @each $breakpoint, $container-max-width in $max-widths {
+        @include media-breakpoint-up($breakpoint, $breakpoints) {
+            max-width: $container-max-width;
+        }
+    }
+}
+
+/**
+ * 
+ *
+ **/
 @mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
     //%开头类似于mixin，但是不能带参数
     %grid-column {
@@ -39,5 +55,22 @@
                 @extend %grid-column;
             }
         }
+
+        .col#{$infix},
+        .col#{$infix}-auto {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+    }
+}
+
+/// 
+/// 控制宽度
+///
+@if $enable-grid-classes {
+    .container {
+        @include make-container();
+        @include make-container-max-widths();
     }
 }

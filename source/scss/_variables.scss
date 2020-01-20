@@ -22,10 +22,10 @@ $black: #000;
 
 
 //Link 参数
-$link-color:              #000;
+$link-color:              #007bff;
 $link-decoration:           none;
 $link-hover-color:        rgb(41, 137, 248);
-$link-hover-decoration:     none;
+$link-hover-decoration:     underline;
 
 //标题参数
 $headings-font-weight:      1;
@@ -37,12 +37,15 @@ $headings-margin-bottom:    0;
 $p-margin-bottom:           0;
 
 //格栅系统参数
+$enable-grid-classes:       true !default;
+
 $grid-columns:              12 !default;
 $grid-gutter-width:         30px !default;
 $grid-row-columns:          6 !default;
 
 $container-padding-x: $grid-gutter-width / 2 !default;
 
+// 页面布局发生响应式变化的边界
 $grid-breakpoints: (
     xs: 0,
     sm: 576px,
@@ -50,6 +53,14 @@ $grid-breakpoints: (
     lg: 992px,
     xl: 1200px
  ) !default;
+
+// 定义不同尺寸下 .container 的宽度
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
+) !default;
 
 //临时区域，暂时定义一个mixin，后续研究twitter的rfs responsive font size
 @mixin font-size($property) {
