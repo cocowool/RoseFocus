@@ -50,6 +50,15 @@
 }
 
 /**
+ * 生成列
+ *
+ **/
+@mixin make-col($size, $columns: $grid-columns) {
+    flex: 0 0 percentage( $size / $columns);
+    max-width: percentage($size / $columns);
+}
+
+/**
  * 
  *
  **/
@@ -78,7 +87,11 @@
         }
 
         @include media-breakpoint-up($breakpoint, $breakpoints) {
-            
+            @for $i from 1 through $columns {
+                .col#{$infix}-#{$i} {
+                    @include make-col($i, $columns);
+                }
+            }
         }
     }
 }
