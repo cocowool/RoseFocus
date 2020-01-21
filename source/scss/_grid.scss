@@ -74,9 +74,11 @@
 
         .col#{$infix},
         .col#{$infix}-auto {
-            flex-basis: 0;
-            flex-grow: 1;
-            max-width: 100%;
+            @extend %grid-column;
+        }
+
+        @include media-breakpoint-up($breakpoint, $breakpoints) {
+            
         }
     }
 }
