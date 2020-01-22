@@ -50,6 +50,16 @@
 }
 
 /**
+ * 生成行
+ **/
+ @mixin make-row($gutter: $grid-gutter-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$gutter / 2;
+    margin-left: -$gutter / 2;
+}
+
+/**
  * 生成列
  *
  **/
@@ -104,4 +114,17 @@
         @include make-container();
         @include make-container-max-widths();
     }
+}
+
+
+// 创建行
+@if $enable-grid-classes {
+    .row {
+        @include make-row();
+    }
+}
+
+//创建栅格系统样式
+@if $enable-grid-classes {
+    @include make-grid-columns();
 }

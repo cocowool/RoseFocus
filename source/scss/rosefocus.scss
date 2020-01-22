@@ -7,6 +7,3 @@
 @import "reset";
 @import "grid";
 @import "mixin";
-
-//创建栅格系统样式
-@include make-grid-columns();
