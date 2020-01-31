@@ -14,16 +14,18 @@ $blog-footer-color: #fff;
 }
 
 .blog-header {
-   height: auto; 
+    padding: 1em 0 1em 0;
+    height: auto; 
 
-   .blog-header-logo {
+    .blog-header-logo {
        color: $blog-header-color;
-   }
+    }
 
-   ul.blog-header-menu {
+    ul.blog-header-menu {
        list-style-type: none;
-       display: inline-flex;
-   }
+       display: flex;
+       justify-content: flex-end;
+    }
 }
 
 .blog-post-lists {
