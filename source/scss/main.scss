@@ -9,8 +9,11 @@ $blog-header-color : #000;
 $blog-footer-bg: #38383a;
 $blog-footer-color: #fff;
 
+.blog-header-container {
+    border-bottom: 1px solid #ccc;
+}
+
 .blog-header {
-   border-bottom: 1px solid #000;
    height: auto; 
 
    .blog-header-logo {
