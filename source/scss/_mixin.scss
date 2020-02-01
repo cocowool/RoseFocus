@@ -21,3 +21,8 @@
     -webkit-order: $val;  
     order: $val;
 }
+
+// Shadwo
+@mixin shadow($val) {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .18);
+}
