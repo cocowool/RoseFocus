@@ -68,6 +68,10 @@ $container-max-widths: (
     xl: 1140px
 ) !default;
 
+//导航栏样式
+$navbar-bg: #fff;
+
+
 //临时区域，暂时定义一个mixin，后续研究twitter的rfs responsive font size
 @mixin font-size($property) {
     font-size: $property;

@@ -1,0 +1,9 @@
+// 导航栏样式
+
+.navbar {
+    background-color: $navbar-bg;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
