@@ -6,4 +6,26 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+
+    %container-flex-properties {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    > .container,
+    > .container-fluid {
+        @extend %container-flex-properties;
+    }
+}
+
+.navbar-brand {
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
 }
