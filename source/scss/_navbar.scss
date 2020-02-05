@@ -12,7 +12,7 @@
         display: flex;
         flex-wrap: inherit;
         align-items: center;
-        justify-content: space-between;
+        // justify-content: space-between;
     }
 
     > .container,
@@ -29,10 +29,15 @@
 }
 
 .navbar-brand {
+    display: flex;
     white-space: nowrap;
 
     &:hover,
     &:focus {
         text-decoration: none;
     }
+}
+
+.navbar-menu {
+    display: flex;
 }
