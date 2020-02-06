@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding: $navbar-padding-y $navbar-padding-x;
 
     %container-flex-properties {
         display: flex;
@@ -40,4 +41,5 @@
 
 .navbar-menu {
     display: flex;
+    flex-basis: auto;
 }

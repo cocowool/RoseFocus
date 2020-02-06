@@ -70,7 +70,8 @@ $container-max-widths: (
 
 //导航栏样式
 $navbar-bg: #fff;
-
+$navbar-padding-x: 1rem;
+$navbar-padding-y: 0.5rem;
 
 //临时区域，暂时定义一个mixin，后续研究twitter的rfs responsive font size
 @mixin font-size($property) {
