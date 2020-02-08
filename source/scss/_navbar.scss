@@ -53,6 +53,13 @@
 }
 
 //支持根据浏览器的尺寸动态隐藏常规菜单，显示移动端菜单
-.navbar-menu-collapse {
-    
+@each $grid-breakpoint in map-keys($grid-breakpoints) {
+    @if $grid-breakpoint == $navbar-collapse {
+        $min: breakpoint-min($navbar-collapse, $grid-breakpoints);
+        @media(max-width: $min){
+            .navbar-menu-collapse {
+                display: none;
+            }
+        }    
+    }
 }
