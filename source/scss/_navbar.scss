@@ -56,10 +56,25 @@
 @each $grid-breakpoint in map-keys($grid-breakpoints) {
     @if $grid-breakpoint == $navbar-collapse {
         $min: breakpoint-min($navbar-collapse, $grid-breakpoints);
+        // @debug $min;
         @media(max-width: $min){
             .navbar-menu-collapse {
                 display: none;
             }
         }    
+    }
+}
+
+//navbar menu隐藏后显示toggler
+.navbar-toggler {
+    color: #0a0a0a;
+    display: block;
+
+    &:hover {
+
+    }
+
+    span {
+
     }
 }

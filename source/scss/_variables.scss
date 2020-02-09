@@ -74,7 +74,7 @@ $navbar-padding-x: 1rem;
 $navbar-padding-y: 0.5rem;
 
 //导航菜单折叠的临界点，与breakpoints保持一致
-$navbar-collapse: "md";
+$navbar-collapse: "lg";
 
 //临时区域，暂时定义一个mixin，后续研究twitter的rfs responsive font size
 @mixin font-size($property) {
