@@ -10,7 +10,7 @@
     padding: $navbar-padding-y $navbar-padding-x;
 
     %container-flex-properties {
-        display: flex;
+        // display: flex;
         flex-wrap: inherit;
         align-items: center;
         // justify-content: space-between;
@@ -34,6 +34,7 @@
     align-items: stretch;
     flex-shrink: 0;
     white-space: nowrap;
+    justify-content: space-between;
 
     &:hover,
     &:focus {
