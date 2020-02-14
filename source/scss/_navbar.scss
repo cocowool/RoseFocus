@@ -10,7 +10,7 @@
     padding: $navbar-padding-y $navbar-padding-x;
 
     %container-flex-properties {
-        display: block;     //如果父容器为block，子容器可以占满整个列宽
+        display: flex;     //如果父容器为block，子容器可以占满整个列宽
         flex-wrap: inherit;
         align-items: center;
         // justify-content: space-between;
@@ -48,7 +48,7 @@
     //navbar menu隐藏后显示toggler
     .navbar-toggler {
         color: #0a0a0a;
-        display: block;
+        display: none;
         position: relative;
         // border: 1px solid #000;
         margin-left: auto;
@@ -102,8 +102,16 @@
         $min: breakpoint-min($navbar-collapse, $grid-breakpoints);
         // @debug $min;
         @media(max-width: $min){
+            .navbar > .container {
+                display: block;
+            }
+
             .navbar-menu-collapse {
                 display: none;
+            }
+
+            .navbar-brand .navbar-toggler {
+                display: block;
             }
         }    
     }
