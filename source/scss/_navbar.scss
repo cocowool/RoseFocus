@@ -10,7 +10,7 @@
     padding: $navbar-padding-y $navbar-padding-x;
 
     %container-flex-properties {
-        // display: flex;
+        display: block;     //如果父容器为block，子容器可以占满整个列宽
         flex-wrap: inherit;
         align-items: center;
         // justify-content: space-between;
@@ -50,7 +50,7 @@
         color: #0a0a0a;
         display: block;
         position: relative;
-        border: 1px solid #000;
+        // border: 1px solid #000;
         margin-left: auto;
 
         // height:3.25rem;
@@ -61,7 +61,24 @@
         }
 
         span {
+            display: block;
+            background-color: rgba(0,0,0,0.2);
+            width: 16px;
             height: 1px;
+            position: absolute;
+            left: calc(50% - 8px);
+
+            &:nth-child(1) {
+                top: calc(50% - 6px);
+            }
+
+            &:nth-child(2) {
+                top: calc(50% - 1px);
+            }
+
+            &:nth-child(3) {
+                top: calc(50% + 4px);
+            }
         }
     }
 }
