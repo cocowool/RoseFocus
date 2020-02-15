@@ -1,5 +1,4 @@
 // 导航栏样式
-
 .navbar {
     background-color: $navbar-bg;
     position: relative;
@@ -7,12 +6,14 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    min-height: $navbar-min-height;
     padding: $navbar-padding-y $navbar-padding-x;
 
     %container-flex-properties {
         display: flex;     //如果父容器为block，子容器可以占满整个列宽
         flex-wrap: inherit;
         align-items: center;
+        min-height: $navbar-min-height;
         // justify-content: space-between;
     }
 
@@ -35,6 +36,7 @@
     flex-shrink: 0;
     white-space: nowrap;
     justify-content: space-between;
+    min-height: $navbar-min-height;
 
     &:hover,
     &:focus {
@@ -43,6 +45,8 @@
 
     .navbar-title {
         cursor: pointer;
+        min-height: $navbar-min-height;
+        line-height: $navbar-min-height;
     }
 
     //navbar menu隐藏后显示toggler
@@ -86,6 +90,8 @@
 .navbar-menu-container {
     display: flex;
     flex-basis: auto;
+    min-height: $navbar-min-height;
+    line-height: $navbar-min-height;
 
     .navbar-menu {
         display: flex;

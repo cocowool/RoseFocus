@@ -70,8 +70,9 @@ $container-max-widths: (
 
 //导航栏样式
 $navbar-bg: #fff;
-$navbar-padding-x: 1rem;
-$navbar-padding-y: 0.5rem;
+$navbar-min-height: 2.5rem;
+$navbar-padding-x: 0rem;
+$navbar-padding-y: 0rem;
 
 //导航菜单折叠的临界点，与breakpoints保持一致
 $navbar-collapse: "lg";
