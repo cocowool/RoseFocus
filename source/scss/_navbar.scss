@@ -37,6 +37,7 @@
     white-space: nowrap;
     justify-content: space-between;
     min-height: $navbar-min-height;
+    padding-right: $navbar-brand-padding-x;
 
     &:hover,
     &:focus {
@@ -94,11 +95,28 @@
     line-height: $navbar-min-height;
 
     .navbar-menu {
-        display: flex;
+        // display: flex;
         flex-direction: column;
         list-style: none;
-        padding-left: 0;
+        padding-left: $navbar-menu-padding-x;
         margin-bottom: 0;    
+
+        a {
+            // display: flex;
+            // flex-grow: 0;
+            // flex-shrink: 0;
+            // position: relative;
+            min-height: $navbar-min-height;
+            line-height: $navbar-min-height;
+            padding:0 $navbar-menu-item-padding-x;
+            color: #363636;
+            max-width: 2rem;
+
+            &:hover {
+                background-color: #f2f2f2;
+                color: #0a0a0a;
+            }
+        }
     }
 }
 
