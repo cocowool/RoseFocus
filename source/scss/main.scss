@@ -9,8 +9,8 @@ $blog-header-color : #000;
 $blog-footer-bg: #38383a;
 $blog-footer-color: #fff;
 
-body {
-    // margin-top: 3rem;
+html, body {
+    background-color: #3f3f3f 0.05;
 
 }
 
@@ -35,17 +35,25 @@ body {
 
 .blog-content {
     // display: flex;
-    padding-top: 3rem;
+    padding-top: 3.5rem;
     flex-direction: row;
-    // margin-top: 3rem;
-    .blog-post-lists {
-        display: flex;
-        // border: 1px solid #000;
-    }
-    
-    .blog-sidebar {
-        display: flex;
-        // border: 1px solid #000;
+
+    .blog-main-content {
+        min-height: 800px;
+
+        .blog-post-lists {
+            display: flex;
+            // border: 1px solid #000;
+
+            .blog-post {
+                display: block;
+            }
+        }
+        
+        .blog-sidebar {
+            display: flex;
+            // border: 1px solid #000;
+        }
     }
     
     .blog-footer {
@@ -53,30 +61,6 @@ body {
         padding: 1em;
         background-color: $blog-footer-bg;
         color: $blog-footer-color;
-    }
-}
-
-
-
-.rosefocus-body {
-    padding-top:2rem;
-    min-height: 800px;
-    
-}
-
-$nav-color: green;
-  
-// nav {
-//     display: flex;
-//     flex-flow: row wrap;
-//     justify-content: flex-end;
-//     height: 50px;
-//     background-color: $nav-color;
-// }
-
-@each $color in red, green, yellow, blue {
-    .p_#{$color} {
-        background-color: #{$color};
     }
 }
 
@@ -125,7 +109,7 @@ div.fl-container .fl-m2 {
 }
 
 #top-menu {
-    background-color: $nav-color;
+    // background-color: $nav-color;
 }
 
 foot {
