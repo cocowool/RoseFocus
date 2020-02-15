@@ -95,26 +95,27 @@
     line-height: $navbar-min-height;
 
     .navbar-menu {
-        // display: flex;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         list-style: none;
         padding-left: $navbar-menu-padding-x;
         margin-bottom: 0;    
 
         a {
-            // display: flex;
-            // flex-grow: 0;
-            // flex-shrink: 0;
-            // position: relative;
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            position: relative;
             min-height: $navbar-min-height;
             line-height: $navbar-min-height;
             padding:0 $navbar-menu-item-padding-x;
             color: #363636;
-            max-width: 2rem;
+            // max-width: 2rem;
 
             &:hover {
                 background-color: #f2f2f2;
                 color: #0a0a0a;
+                text-decoration: none;
             }
         }
     }
