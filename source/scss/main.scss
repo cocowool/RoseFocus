@@ -47,6 +47,13 @@ html, body {
 
             .blog-post {
                 display: block;
+                border-bottom:1px solid #ddd;
+                border-top:1px solid #fff;
+                padding: 2rem 0;
+
+                &:nth-last-child(1) {
+                    border-bottom: 1px solid #fff;
+                }
 
                 > h1 {
                     color: #333;
