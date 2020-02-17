@@ -11,7 +11,7 @@ $blog-footer-color: #fff;
 
 html, body {
     background-color: #3f3f3f 0.05;
-
+    color: #444;
 }
 
 .blog-header-container {
@@ -89,6 +89,10 @@ html, body {
                         height: 125px;
                         display:block;
                     }
+                }
+
+                .author-desc {
+                    text-align: center;
                 }
             }
         }
