@@ -35,7 +35,7 @@ html, body {
 
 .blog-content {
     // display: flex;
-    padding-top: 3.5rem;
+    padding-top: 4rem;
     flex-direction: row;
 
     .blog-main-content {
@@ -75,6 +75,22 @@ html, body {
         .blog-sidebar {
             display: flex;
             // border: 1px solid #000;
+
+            .blog-profile {
+                width: 100%;
+                
+                .author-img {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        border: 1px solid #000;
+                        width: 125px;
+                        height: 125px;
+                        display:block;
+                    }
+                }
+            }
         }
     }
     
