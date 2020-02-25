@@ -5,7 +5,7 @@
  *
  */
 @function breakpoint-infix($name, $breakpoints: $grid-breakpoints){
-    @debug "test";
+    // @debug "test";
     @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
 }
 
