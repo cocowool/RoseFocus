@@ -84,10 +84,15 @@ html, body {
                     justify-content: center;
 
                     a {
-                        border: 1px solid #000;
+                        // border: 1px solid #000;
                         width: 125px;
                         height: 125px;
                         display:block;
+
+                        img {
+                            width: 125px;
+                            height: 125px;
+                        }
                     }
                 }
 
