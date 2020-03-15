@@ -87,6 +87,11 @@ html, body {
                 margin-bottom: 1rem;
                 line-height: 2rem;
             }
+
+            img {
+                width: auto;
+                max-width: 100%;
+            }
         }
 
         .blog-sidebar {
