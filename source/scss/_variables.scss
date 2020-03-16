@@ -18,7 +18,7 @@ $h6-font-size:              $font-size-base !default;
 
 $font-weight-normal:        400;
 
-$line-height-base:          1.5;
+$line-height-base:          1.8;
 
 //Body 参数
 $body-color:              #000; 
@@ -34,13 +34,14 @@ $link-hover-color:        rgb(41, 137, 248);
 $link-hover-decoration:     underline;
 
 //标题参数
-$headings-font-weight:      1;
+$headings-font-weight:      300;
 $headings-line-height:      1.5;
 $headings-color:          #000;
 
 //各元素的下边距
-$headings-margin-bottom:    0;
-$p-margin-bottom:           0;
+$headings-margin-top:       1rem;
+$headings-margin-bottom:    1rem;
+$p-margin-bottom:           0.5rem;
 
 //格栅系统参数
 $enable-grid-classes:       true !default;
@@ -69,16 +70,26 @@ $container-max-widths: (
 ) !default;
 
 //导航栏样式
-$navbar-bg: #fff;
-$navbar-min-height: 2.5rem;
-$navbar-padding-x: 0rem;
-$navbar-padding-y: 0rem;
-$navbar-brand-padding-x: 0.5rem;
-$navbar-menu-padding-x: 1rem;
-$navbar-menu-item-padding-x: 1rem;
+$navbar-bg:                   #fff;
+$navbar-min-height:             2.5rem;
+$navbar-padding-x:              0rem;
+$navbar-padding-y:              0rem;
+$navbar-brand-padding-x:        0.5rem;
+$navbar-menu-padding-x:         1rem;
+$navbar-menu-item-padding-x:    1rem;
 
 //导航菜单折叠的临界点，与breakpoints保持一致
-$navbar-collapse: "lg";
+$navbar-collapse:               "lg";
+
+//Markdown 样式变量
+$blockquote-bg-color:         #f8f8f8;
+$blockquote-bar-color:        #2479CC;
+
+//Figure代码块样式
+$figure-bg-color:             #f6f8fa;
+
+//表格样式
+$table-cell-padding:            0;
 
 //临时区域，暂时定义一个mixin，后续研究twitter的rfs responsive font size
 @mixin font-size($property) {

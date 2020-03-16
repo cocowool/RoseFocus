@@ -1,0 +1,12 @@
+// 针对Mardown的一些样式
+// 适用于Typora样式
+
+blockquote { 
+    background-color: $blockquote-bg-color;
+    border-left: 3px solid $blockquote-bar-color;
+    padding: 1rem 1rem;
+}
+
+h1 { 
+    border-bottom: 1px solid #f8f8f8;
+}

@@ -32,6 +32,10 @@
     font-size: $font-size-root;
 }
 
+html {
+    background-color: $body-bg-color;
+}
+
 // Body 原素重新设置样式
 //
 // 1. 移除所有浏览器边距
@@ -46,7 +50,7 @@ body {
 }
 
 %heading {
-    margin-top:0;
+    margin-top: $headings-margin-top;
     margin-bottom: $headings-margin-bottom;
     line-height: $headings-line-height;
     font-weight: $headings-font-weight;
@@ -120,4 +124,16 @@ kbd,
 samp {
     font-family: $font-family-monospace;
     @include font-size(1em);
+}
+
+blockquote {
+    margin: 1rem 0 1rem;
+}
+
+figure {
+    margin: 1rem 0;
+    padding: 16px;
+    background-color: $figure-bg-color;
+    overflow: auto;
+    border-radius: 3px;
 }

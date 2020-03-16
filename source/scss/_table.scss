@@ -1,0 +1,14 @@
+
+.table {
+    width: 100%;
+
+    th,
+    td {
+        padding: $table-cell-padding;
+    }
+
+    tbody {
+        vertical-align: inherit;
+    }
+
+}
