@@ -1,10 +1,18 @@
 
 .table {
     width: 100%;
+    vertical-align: $table-cell-vertical-align;
+    color: $table-color;
+    background-color: $table-bg;
 
     th,
     td {
         padding: $table-cell-padding;
+        border: 1px solid #ddd;
+    }
+
+    thead {
+        background-color: $table-head-bg;
     }
 
     tbody {
