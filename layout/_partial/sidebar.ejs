@@ -3,9 +3,14 @@
         <div class="author-img">
             <a href="#"><img src="<%- url_for('image/fox.jpg') %>" alt=""></a>
         </div>
+
         <div class="author-desc">
             <h1><%= config.author %></h1>
             <p><%= config.subtitle %></p>
         </div>
+
+        <%- partial('_partial/google-analytics') -%>
+
     </div>
+
 </div>
