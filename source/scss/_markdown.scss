@@ -11,3 +11,16 @@ h1 {
     // border-bottom: 1px solid #f8f8f8;
     font-weight: 300;
 }
+
+.highlight {
+    background-color: #fff;
+
+    table {
+        background-color: #fff;
+        border-width: 0;
+
+        th, td {
+            border-width: 0;
+        }
+    }
+}
