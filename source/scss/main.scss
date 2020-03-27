@@ -98,10 +98,15 @@ html, body {
 
         .blog-sidebar {
             display: flex;
+            flex-direction: column;
             // border: 1px solid #000;
 
             .blog-profile {
                 width: 100%;
+                border:1px solid #e5e8ed;
+                box-shadow: 0 2px 4px 0 rgba(3,27,78,.06);
+                padding: 1rem;
+                margin-bottom: 1.5rem;
                 
                 .author-img {
                     display: flex;
@@ -116,6 +121,7 @@ html, body {
                         img {
                             width: 125px;
                             height: 125px;
+                            border-radius: 72.5px;
                         }
                     }
                 }
