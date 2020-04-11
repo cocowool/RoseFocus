@@ -101,6 +101,18 @@ html, body {
             flex-direction: column;
             // border: 1px solid #000;
 
+            .blog-wechat {
+                padding: 1rem 0 0.5rem;
+                width: 100%;
+                max-width: 100%;
+
+                img {
+                    max-width: 100%;
+                    width:auto;
+                    
+                }
+            }
+
             .blog-profile {
                 width: 100%;
                 border:1px solid #e5e8ed;
@@ -114,14 +126,16 @@ html, body {
 
                     a {
                         // border: 1px solid #000;
-                        width: 125px;
+            			max-width: 100%;
+                        width: atuo;
                         height: 125px;
                         display:block;
 
                         img {
-                            width: 125px;
+			                max-width: 100%;
+                            width: auto;
                             height: 125px;
-                            // border-radius: 72.5px;
+                            border-radius: 72.5px;
                         }
                     }
                 }
