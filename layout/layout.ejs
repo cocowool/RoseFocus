@@ -4,6 +4,8 @@
     <title><%= config.title %></title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="<%- url_for('scss/main.css') %>" />
+    <meta name="keywords" content="<%= config.keywords %>">
+    <meta name="description" content="<%= config.description %>">
     <%- partial('_partial/baidu') -%>
 </head>
 <body>
