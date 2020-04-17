@@ -10,8 +10,13 @@ $blog-footer-bg: #38383a;
 $blog-footer-color: #fff;
 
 html, body {
+    font-family: PingFangSC-Regular,"Microsoft Yahei-Regular","Microsoft Yahei";
+    font-size: 16px;
+    color: #3a3a3a;
+    letter-spacing: 0;
+    text-align: justify;
+    line-height: 27px;
     background-color: #3f3f3f 0.05;
-    color: #444;
 }
 
 .blog-header-container {
