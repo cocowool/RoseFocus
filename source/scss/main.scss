@@ -75,6 +75,17 @@ html, body {
                     line-height: 1.8;
                 }
             }
+
+            .page-nav {
+                text-align: center;
+                margin: 1rem 0;
+
+                span, a {
+                    border-radius: 3px;
+                    display: inline-block;
+                    padding: 6px 12px;
+                }
+            }
         }
         
         .blog-post-detail {
