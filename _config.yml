@@ -1,6 +1,9 @@
 menu:
   首页: /
-  # 办公效率: /categories/办公效率
+  开发: /categories/开发
+  运维: /categories/运维
+  办公: /categories/办公
+  杂谈: /categories/杂谈
   # 标签: /about
   关于: /about/
   # 归档: /

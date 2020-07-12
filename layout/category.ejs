@@ -1,1 +1,11 @@
-hello world
+<%= config.category %>
+
+<div class="blog-category col-md-9 col-lg-9 col-xl-9 col-sm-12 col-xs-12">
+  <div class="blog-category-title">
+    <h1><%= __('categories') %></h1>
+  </div>
+  <div class="blog-category-content">
+    <%- list_categories({show_count: theme.show_count}) %>
+
+  </div>
+</div>
