@@ -7,16 +7,7 @@
                 <p>
                     <a href="<%- url_for(post.path) %>" class="more-link">继续阅读 »</a>&nbsp;&nbsp;
                     <span><%- date(post.date, "YYYY-MM-DD") %></span>&nbsp;&nbsp;
-                    <span class="blog-post-category"><b>
-                        <% if (post.categories && post.categories.length){ %>
-                            <%- list_categories(post.categories, {
-                              show_count: false,
-                              class: 'blog-category-link',
-                              style: 'none',
-                              separator: '►'
-                            }) %>
-                        <% } %>      
-                    </b></span>
+                    <span class="blog-post-category"><b><%- partial('_partial/post/category', { post } ) %></b></span>
                 </p>
             </div>
         </div>
