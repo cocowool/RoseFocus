@@ -22,4 +22,5 @@ node_sass:
 
 ## 参考资料
 1. [从零开始制作 Hexo 主题](https://www.cnblogs.com/mmzuo-798/p/10451385.html)
+2. [与 Hexo 配合使用 Sass 和 Webpack](https://lantian.pub/article/modify-website/sass-webpack-with-hexo.lantian/)
 
