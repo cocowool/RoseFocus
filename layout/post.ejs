@@ -12,4 +12,17 @@
       <p>关注<a href="https://www.edulinks.cn">大江小浪</a>，一起聊聊生活里的那些风浪</p>
     </div>
   </div>
+  <% if (page.prev || page.next){ %>
+  <div class="blog-post-nav row">
+    <% if (page.prev){ %>
+      <a href="<%- url_for(page.prev.path) %>" id="article-nav-newer" class="article-nav-link-wrap">
+        <%= __('newer') %>
+      </a>
+    <% } %>
+    <% if (page.next){ %>
+      <a href="<%- url_for(page.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
+        <%= __('older') %>
+      </a>
+    <% } %>
+  <% } %>    
 </div>

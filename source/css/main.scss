@@ -133,6 +133,12 @@ html, body {
                 width: 70%;
                 padding: 0.5em 0;
             }
+
+            .blog-post-nav {
+                .nav-link {
+                    border:1px solid #ccc;
+                }
+            }
         }
 
         .blog-about {
