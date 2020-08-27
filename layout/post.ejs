@@ -15,14 +15,19 @@
   <% if (page.prev || page.next){ %>
   <div class="blog-post-nav row">
     <% if (page.prev){ %>
-      <a href="<%- url_for(page.prev.path) %>" id="article-nav-newer" class="article-nav-link-wrap">
-        <%= __('newer') %>
-      </a>
+      <div class="nav-link col-md-6">
+        <a href="<%- url_for(page.prev.path) %>" id="article-nav-newer" class="article-nav-link-wrap">
+          &lt;&lt; <%= page.prev.title %>
+        </a>  
+      </div>
     <% } %>
     <% if (page.next){ %>
-      <a href="<%- url_for(page.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
-        <%= __('older') %>
-      </a>
+      <div class="nav-link col-md-6">
+        <a href="<%- url_for(page.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
+          <%= page.next.title %> &gt;&gt;
+        </a>
+      </div>
     <% } %>
+  </div>
   <% } %>    
 </div>

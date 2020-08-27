@@ -135,8 +135,14 @@ html, body {
             }
 
             .blog-post-nav {
+                padding-top: 2em;
+                
                 .nav-link {
-                    border:1px solid #ccc;
+                    a {
+                        border:1px solid #ccc;
+                        display: block;
+                        text-align: center;
+                    }
                 }
             }
         }
