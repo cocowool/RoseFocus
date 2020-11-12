@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="<%- url_for('css/main.css') %>" />
     <meta name="baidu-site-verification" content="y4EEfl1oRM" />
-    <meta name="keywords" content="<%= config.keywords %>">
-    <meta name="description" content="<%= config.description %>">
+    <% if( page.keywords ){ %><meta name="keywords" content="<%= page.keywords %>"><% }else{ %><meta name="keywords" content="<%= config.keywords %>"><% } %>
+    <% if( page.description ){ %><meta name="description" content="<%= page.description %>"><% }else{ %><meta name="description" content="<%= config.description %>"><% } %>
     <%- partial('_partial/baidu') -%>
 </head>
 <body>
