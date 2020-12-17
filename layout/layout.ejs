@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><%= config.title %></title>
+    <title><% if( page.title ){ %><%= page.title %>-<% } %><%= config.title %></title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="<%- url_for('css/main.css') %>" />
     <meta name="baidu-site-verification" content="y4EEfl1oRM" />
@@ -22,7 +22,16 @@
                 
         <foot class="blog-footer">
             <div class="container">
-                &copy; 2020 <%= config.title %> - 京ICP备15058613-2号
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12">&copy; 2020 <%= config.title %> - 京ICP备15058613-2号</div>
+                    <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12 col-xs-12" id="friend_links">
+                        <h2>友情链接</h2>
+                        <ul>
+                            <li><a href="http://pdcfighting.com">Python爬虫与数据挖掘</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
         </foot>
     </div>

@@ -11,11 +11,11 @@ $blog-footer-color: #fff;
 
 html, body {
     font-family: SF Pro SC,SF Pro Display,SF Pro Icons,PingFang SC,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     color: #3a3a3a;
     letter-spacing: 0;
     text-align: justify;
-    line-height: 27px;
+    line-height: 28px;
     background-color: #3f3f3f 0.05;
 }
 
@@ -219,6 +219,31 @@ html, body {
         padding: 1em;
         background-color: $blog-footer-bg;
         color: $blog-footer-color;
+
+        #friend_links {
+            color: #fff;
+
+            h2 {
+                font-size: 1rem;
+                line-height: 28px;
+                margin: 0;
+                padding: 0;
+                color: #fff;
+            }
+
+            ul {
+                li {
+                    a {
+                        font-size: 1rem;
+                        color:#fff;
+                    }
+
+                    a:hover {
+                        color: #2989f8;
+                    }
+                }
+            }
+        }
     }
 }
 
