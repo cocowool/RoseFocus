@@ -116,6 +116,20 @@ html, body {
                 margin:1rem auto;
             }
 
+            .blog-post-ad {
+                h3 {
+                    text-align: center;
+                    line-height: 150%;
+                    margin: 1.5em 0;
+                    color: rgb(239, 112, 96);
+                    font-weight: bold;
+                }
+
+                img {
+                    max-width: 50%;
+                }
+            }
+
             .blog-post-footer {
                 text-align: center;
             }
