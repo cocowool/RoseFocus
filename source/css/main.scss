@@ -45,10 +45,17 @@ html, body {
 
     .blog-main-content {
         // min-height: 800px;
-
         .blog-post-lists {
             // display: flex;
             // border: 1px solid #000;
+            .blog-ad-home {
+                border-bottom:2px solid #B51700;
+    
+                image {
+                    max-width: 95%;
+                    text-align: center;
+                }
+            }
 
             .blog-post {
                 display: block;

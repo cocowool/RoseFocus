@@ -1,4 +1,8 @@
 <div class="blog-post-lists col-md-9 col-lg-9 col-xl-9 col-sm-12 col-xs-12">
+    <div class="blog-ad-home">
+        <img src="<%- url_for('image/ad_home.jpg') %>" alt="扫码参与抽奖，获得腾讯视频VIP兑换卡">
+    </div>
+    
     <% page.posts.each(function (post) { %>
         <div class="blog-post">
             <h1><a href="<%- url_for(post.path) %>"><%= post.title %></a></h1>
